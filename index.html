@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html><head>
+	<title>Apollo Christmas</title>
+	<meta name="description" content="Slide" text="" on="" hoverusing="" html+css+javascript="" for="" use="" in="" any="" web="" project.="">
+	<meta name="keywords" content="html,css,js,javascript,codingflag,front end,web design,web,codes,programms,html5,coding,editor,jquery,p5,web dev">
+	<link rel="shortcut icon" href="images/favicon.ico">
+<script src="library/prettify.js"></script>
+<link rel="stylesheet" href="library/prettify.css">
+<script src="library/jquery.js"></script>
+<script src="codes/Html_Web/20161211013400pm95/default.js"></script>
+<style>
+	.code{
+		width:100%;
+		resize:none;
+		height:320px;
+		font-family:sans-serif;
+		font-size:18px;
+
+	}
+	#codes
+	{
+		position: absolute;
+		margin-right:1px;
+		top: 220;
+		left: 0;
+		right:0;
+		background: #EFEFEF;
+		width: 54px;
+		height: auto;
+		padding: 14 1;
+		border-radius:0 10px 10px 0 ;
+		border:3px solid #eee;
+		transition:all 0.3s linear;
+	}
+	#codes:hover
+	{
+		width:60px;
+		padding-left:6px;
+	}
+	#codes i
+	{
+		cursor:pointer;
+		display:block;
+		width:40px;
+		font-size:35px;
+		margin-left:3px;
+		margin-top:6px;
+	}
+                       .codesTextArea{
+				color: #151719;
+				right: 0px;
+				top:0;
+				border:none;
+				outline:none;
+				font-size:17px;
+				border-left:2px dashed #333;
+				resize:none;
+				margin-top: 0px;
+				position: absolute;
+				width: 570px;
+				padding-left:3px;
+				height: 100%;
+				z-index: 10;
+				transform-origin:100% 100%;
+				transform:perspective(800px) rotateY(90deg);
+				transition:transform 0.3s linear;
+				float:right;
+				padding: 5px;
+			}
+</style>
+
+<script type="text/javascript">
+			var statusA = "close";
+			function showCode(menu,b,c)
+			{
+				var menu=document.getElementById(menu);
+				if(statusA == "close")
+				{
+					menu.style.transform = "perspective(800px) rotateY(0deg)";
+					statusA = "open";
+				}else
+				{
+					menu.style.transform = "perspective(800px) rotateY(90deg)";
+					statusA = "close";
+				}
+			}
+
+</script>
+
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+  color: #111;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1em/1.5;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+html, body{
+	background: rgb(236, 240, 241);
+  background-image: url('img/background.jpg');
+}
+div.container{
+	min-width: 500px;
+	margin: 6% auto;
+	text-align: center;
+}
+.container h1{
+	font-size: 3.2em;
+	padding: 35px 0 45px;
+}
+.container button {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	left: 50%;
+	margin-bottom: 20px;
+	width: 264px;
+	padding: 17px 55px;
+	background: transparent; outline: none;
+	border: 2px solid #111;
+	transform:translateX(-50%);
+}
+.container button:hover{
+	cursor: pointer
+}
+.container button:hover:before{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.container button:before{
+	content: attr(data-hover);
+	position: absolute;
+	top: 1.22em;
+	left: 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: 1em;
+	opacity: 0;
+	transform: translate(-100%,0);
+	-moz-transition: all 0.32s ease-in-out;
+	-webkit-transition: all 0.32s ease-in-out;
+	transition: all 0.32s ease-in-out;
+}
+.container button:hover div{
+	opacity: 0;
+	transform: translate(100%,0);
+}
+.container button div{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: 1em;
+	-moz-transition: all 0.32s ease-in-out;
+	-webkit-transition: all 0.32s ease-in-out;
+	transition: all 0.32s ease-in-out;
+}</style>
+</head>
+<body>
+
+  <!-- Html code-->
+<pre contenteditable="true" spellcheck="false" style="background: rgb(238, 238, 238); padding-left: 7px; overflow: scroll; border-left: 2px dashed rgb(51, 51, 51);" id="htmlCode" class="codesTextArea prettyprint prettyprinted"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;h1&gt;</span><span class="pln">Slide text on hover</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">data-hover</span><span class="pun">=</span><span class="atv">"https://www.facebook.com/events/354401988271164/"</span><span class="tag">&gt;&lt;div&gt;</span><span class="pln">Apollo</span><span class="tag">&lt;/div&gt;&lt;/button&gt;</span><span class="pln">
+  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">data-hover</span><span class="pun">=</span><span class="atv">"twitter.com/dsr3217"</span><span class="tag">&gt;&lt;div&gt;</span><span class="pln">Twitter</span><span class="tag">&lt;/div&gt;&lt;/button&gt;</span><span class="pln">
+  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">data-hover</span><span class="pun">=</span><span class="atv">"instagram.com/dsr3217"</span><span class="tag">&gt;&lt;div&gt;</span><span class="pln">Instagram</span><span class="tag">&lt;/div&gt;&lt;/button&gt;</span><span class="pln">
+  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">data-hover</span><span class="pun">=</span><span class="atv">"linkedin.com/dsr3217"</span><span class="tag">&gt;&lt;div&gt;</span><span class="pln">Linkedin</span><span class="tag">&lt;/div&gt;&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></pre>
+
+  <!-- css code-->
+
+<pre contenteditable="true" spellcheck="false" style="background: rgb(238, 238, 238); padding-left: 7px; overflow: scroll; border-left: 2px dashed rgb(51, 51, 51);" id="cssCode" class="codesTextArea prettyprint prettyprinted"><span class="lit">@import</span><span class="pln"> url</span><span class="pun">(</span><span class="pln">http</span><span class="pun">:</span><span class="com">//fonts.googleapis.com/css?family=Open+Sans:300,400,800);</span><span class="pln">
+
+</span><span class="pun">*,</span><span class="pln"> </span><span class="pun">*:</span><span class="pln">before</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*:</span><span class="pln">after</span><span class="pun">{</span><span class="pln">
+  box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> border</span><span class="pun">-</span><span class="pln">box</span><span class="pun">;</span><span class="pln">
+  padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+  color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#111;</span><span class="pln">
+  text</span><span class="pun">-</span><span class="pln">decoration</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln">
+  font</span><span class="pun">-</span><span class="pln">weight</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">;</span><span class="pln">
+  font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1em</span><span class="pun">/</span><span class="lit">1.5</span><span class="pun">;</span><span class="pln">
+  font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Open Sans'</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Arial</span><span class="pun">,</span><span class="pln"> sans</span><span class="pun">-</span><span class="pln">serif</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+html</span><span class="pun">,</span><span class="pln"> body</span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> rgb</span><span class="pun">(</span><span class="lit">236</span><span class="pun">,</span><span class="pln"> </span><span class="lit">240</span><span class="pun">,</span><span class="pln"> </span><span class="lit">241</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+div</span><span class="pun">.</span><span class="pln">container</span><span class="pun">{</span><span class="pln">
+	min</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">500px</span><span class="pun">;</span><span class="pln">
+	margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6</span><span class="pun">%</span><span class="pln"> </span><span class="kwd">auto</span><span class="pun">;</span><span class="pln">
+	text</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> center</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container h1</span><span class="pun">{</span><span class="pln">
+	font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3.2em</span><span class="pun">;</span><span class="pln">
+	padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35px</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">45px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container button </span><span class="pun">{</span><span class="pln">
+	position</span><span class="pun">:</span><span class="pln"> relative</span><span class="pun">;</span><span class="pln">
+	display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln">
+	overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln">
+	left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">%;</span><span class="pln">
+	margin</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">20px</span><span class="pun">;</span><span class="pln">
+	width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">264px</span><span class="pun">;</span><span class="pln">
+	padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">17px</span><span class="pln"> </span><span class="lit">55px</span><span class="pun">;</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> transparent</span><span class="pun">;</span><span class="pln"> outline</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln">
+	border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2px</span><span class="pln"> solid </span><span class="com">#111;</span><span class="pln">
+	transform</span><span class="pun">:</span><span class="pln">translateX</span><span class="pun">(-</span><span class="lit">50</span><span class="pun">%);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container button</span><span class="pun">:</span><span class="pln">hover</span><span class="pun">{</span><span class="pln">
+	cursor</span><span class="pun">:</span><span class="pln"> pointer
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container button</span><span class="pun">:</span><span class="pln">hover</span><span class="pun">:</span><span class="pln">before</span><span class="pun">{</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+	transform</span><span class="pun">:</span><span class="pln"> translate</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container button</span><span class="pun">:</span><span class="pln">before</span><span class="pun">{</span><span class="pln">
+	content</span><span class="pun">:</span><span class="pln"> attr</span><span class="pun">(</span><span class="pln">data</span><span class="pun">-</span><span class="pln">hover</span><span class="pun">);</span><span class="pln">
+	position</span><span class="pun">:</span><span class="pln"> absolute</span><span class="pun">;</span><span class="pln">
+	top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.22em</span><span class="pun">;</span><span class="pln">
+	left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+	width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln">
+	text</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> uppercase</span><span class="pun">;</span><span class="pln">
+	letter</span><span class="pun">-</span><span class="pln">spacing</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3px</span><span class="pun">;</span><span class="pln">
+	font</span><span class="pun">-</span><span class="pln">weight</span><span class="pun">:</span><span class="pln"> </span><span class="lit">800</span><span class="pun">;</span><span class="pln">
+	font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1em</span><span class="pun">;</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+	transform</span><span class="pun">:</span><span class="pln"> translate</span><span class="pun">(-</span><span class="lit">100</span><span class="pun">%,</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> all </span><span class="lit">0.32s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+	</span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> all </span><span class="lit">0.32s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+	transition</span><span class="pun">:</span><span class="pln"> all </span><span class="lit">0.32s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container button</span><span class="pun">:</span><span class="pln">hover div</span><span class="pun">{</span><span class="pln">
+	opacity</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+	transform</span><span class="pun">:</span><span class="pln"> translate</span><span class="pun">(</span><span class="lit">100</span><span class="pun">%,</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">container button div</span><span class="pun">{</span><span class="pln">
+	text</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln"> uppercase</span><span class="pun">;</span><span class="pln">
+	letter</span><span class="pun">-</span><span class="pln">spacing</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3px</span><span class="pun">;</span><span class="pln">
+	font</span><span class="pun">-</span><span class="pln">weight</span><span class="pun">:</span><span class="pln"> </span><span class="lit">800</span><span class="pun">;</span><span class="pln">
+	font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1em</span><span class="pun">;</span><span class="pln">
+	</span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> all </span><span class="lit">0.32s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+	</span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="pln"> all </span><span class="lit">0.32s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+	transition</span><span class="pun">:</span><span class="pln"> all </span><span class="lit">0.32s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></pre>
+
+  <!-- js code-->
+
+<pre contenteditable="true" spellcheck="false" style="background: rgb(238, 238, 238); padding-left: 7px; overflow: scroll; border-left: 2px dashed rgb(51, 51, 51);" id="jsCode" class="codesTextArea prettyprint prettyprinted"><span class="com">// NO JAVASCRIPT</span></pre>
+
+<script>prettyPrint();</script>
+<div class="container">
+  <h1>Apollo Party Sa Christmas</h1>
+  <button data-hover="https://www.facebook.com/events/354401988271164/"><div>Apollo</div></button>
+  <button data-hover="twitter.com/dsr3217"><div>Going</div></button>
+  <button data-hover="instagram.com/dsr3217"><div>Maybe</div></button>
+  <button data-hover="linkedin.com/dsr3217"><div>Invited</div></button>
+</div>
+
+<!-- Read Info And Display -->
+<div id="codes" style="">
+    <i onclick="showCode('htmlCode','jsCode','cssCode')" aria-hidden="true">
+  <img src="images/html.png" style="
+    width: 40px;
+    border-radius: 100%;
+">
+
+</i>
+  <i onclick="showCode('jsCode','cssCode','htmlCode')" aria-hidden="true" style="">
+<img src="images/js.png" style="
+    width: 50px;
+    border-radius: 100%;
+    margin-left: -6px;
+">
+</i>
+  <i onclick="showCode('cssCode','htmlCode','jsCode')" aria-hidden="true">
+<img src="images/css.png" style="
+    width: 40px;
+    border-radius: 100%;
+    margin-top: 3px;
+">
+</i>
+
+  </div>
+
+
+
+
+
+
+
+</body></html>
