@@ -1,2 +1,2 @@
 #Link to the awesome xmas invitation:
-https://cdn.rawgit.com/kboygit/Apollo/master/index.html
+[Link to the invitation](https://cdn.rawgit.com/slashgeegee/apollo/a2cf2898/index.html)
